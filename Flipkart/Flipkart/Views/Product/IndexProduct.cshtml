@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Flipkart.Models.Product>
+<h2>Product List</h2>
+
+    <table class="table">
+        <thead><tr>
+                <th>Id</th>
+                <th>Title</th><th>Description</th>
+                <th>UnitPrice</th><th>Imageurl</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody> 
+            @foreach(var product in Model){
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Title</td>
+                <td>@product.Description</td>
+                <td>@product.UnitPrice</td>
+                <td>@product.Imageurl</td>
+                <td>@product.Quantity</td>
+
+            </tr>
+        }
+        </tbody>
+    </table>

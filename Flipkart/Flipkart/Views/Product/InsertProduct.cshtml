@@ -1,0 +1,23 @@
+﻿@model Flipkart.Models.Product <h2>Product Form</h2>
+
+<form action="/Insert" method="POST">
+    <label for="productID">Product ID:</label>
+    <input type="text" id="productID" name="productID" required>
+
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+
+    <label for="unitPrice">Unit Price:</label>
+    <input type="number" id="unitPrice" name="unitPrice" step="0.01" required>
+
+    <label for="imageURL">Image URL:</label>
+    <input type="url" id="imageURL" name="imageURL" required>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required>
+
+    <button type="submit">Submit</button>
+</form>
